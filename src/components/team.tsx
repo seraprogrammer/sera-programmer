@@ -24,9 +24,9 @@ const teamMembers: TeamMember[] = [
     image: "https://codervai.vercel.app/assets/hero-D3XrQ9qY.jpg",
     bio: "Nazmul has over 7 years of experience in the industry and leads our strategic vision.",
     social: {
-      twitter: "https://twitter.com/alexj",
-      linkedin: "https://linkedin.com/in/alexj",
-      github: "https://github.com/alexj",
+      twitter: "https://x.com/js_olova",
+      linkedin: "https://www.linkedin.com/in/codernazmulhossain/",
+      github: "https://github.com/seraprogrammer",
     },
   },
 ];
