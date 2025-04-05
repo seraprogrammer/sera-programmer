@@ -29,24 +29,24 @@ const links = [
 
 export default function FooterSection() {
   return (
-    <footer className="py-16 md:py-32">
-      <div className="mx-auto max-w-5xl px-6">
-        <a href="/" aria-label="go home" className="mx-auto block size-fit">
-          <Image src={Logo} alt="logo" width={40} height={40} />
-        </a>
-
-        <div className="my-8 flex flex-wrap justify-center gap-6 text-sm">
-          {links.map((link, index) => (
-            <a
-              key={index}
-              href={link.href}
-              className="text-muted-foreground hover:text-primary block duration-150"
-            >
-              <span>{link.title}</span>
+    <footer className="border-t py-16 md:py-24">
+      <div className="mx-auto max-w-2xl px-6">
+        <div className="flex flex-col items-center gap-12 mb-12">
+          {/* Logo and Description */}
+          <div className="space-y-4 text-center">
+            <a href="/" aria-label="go home" className="block mx-auto size-fit">
+              <Image src={Logo} alt="logo" width={48} height={48} />
             </a>
-          ))}
+            <p className="text-muted-foreground text-base md:text-lg max-w-md mx-auto font-medium leading-relaxed">
+              Empowering developers with cutting-edge solutions and innovative
+              tools for modern web development. We transform ideas into exceptional
+              digital experiences.
+            </p>
+          </div>
         </div>
-        <div className="my-8 flex flex-wrap justify-center gap-6 text-sm">
+
+        {/* Social Links */}
+        <div className="flex flex-wrap justify-center gap-8 border-t pt-12">
           <a
             href="#"
             target="_blank"
@@ -173,9 +173,10 @@ export default function FooterSection() {
             </svg>
           </a>
         </div>
-        <span className="text-muted-foreground block text-center text-sm">
-          {" "}
-          © {new Date().getFullYear()} Tailus UI, All rights reserved
+
+        {/* Copyright */}
+        <span className="text-muted-foreground mt-8 block text-center text-sm">
+          © {new Date().getFullYear()} Sera Programmer. All rights reserved.
         </span>
       </div>
     </footer>

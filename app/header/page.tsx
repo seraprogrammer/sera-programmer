@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Menu, X, Home, Lightbulb, Users } from "lucide-react";
+import { Menu, X, Home, Lightbulb, Users, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { ModeToggle } from "@/components/toggle";
@@ -11,8 +11,17 @@ import Image from "next/image";
 
 const menuItems = [
   { name: "Home", href: "/", icon: <Home className="mr-2 h-4 w-4" /> },
-  { name: "Solution", href: "/solution", icon: <Lightbulb className="mr-2 h-4 w-4" /> },
+  {
+    name: "Solution",
+    href: "/solution",
+    icon: <Lightbulb className="mr-2 h-4 w-4" />,
+  },
   { name: "Team", href: "/team", icon: <Users className="mr-2 h-4 w-4" /> },
+  {
+    name: "Contact Us",
+    href: "/contact",
+    icon: <Mail className="mr-2 h-4 w-4" />,
+  },
 ];
 
 export const Header = () => {

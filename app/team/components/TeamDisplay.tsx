@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import type { TeamMember } from "@/app/team/types";
 import Image from "next/image";
+import Link from "next/link";
 
 interface TeamDisplayProps {
   teamMembers: TeamMember[];
@@ -167,7 +168,7 @@ export default function TeamDisplay({ teamMembers }: TeamDisplayProps) {
                 shadow-[0_0_20px_rgba(var(--primary),0.3)] hover:shadow-[0_0_25px_rgba(var(--primary),0.4)]
                 transition-all duration-300 text-lg font-semibold"
             >
-              View Open Positions
+              <Link href="/positions">View Open Positions</Link>
             </Button>
           </div>
         </div>

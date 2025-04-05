@@ -1,6 +1,5 @@
 import TeamDisplay from "./components/TeamDisplay";
 import type { TeamMember } from "./types";
-import FooterSection from "../components/footer";
 
 const teamMembers: TeamMember[] = [
   {
@@ -27,7 +26,6 @@ export default function Team() {
       </div>
 
       <TeamDisplay teamMembers={teamMembers} />
-      <FooterSection />
     </section>
   );
 }

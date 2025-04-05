@@ -1,6 +1,5 @@
 import { Code, Palette, Zap } from "lucide-react";
 import Image from "next/image";
-import FooterSection from "@/app/components/footer";
 import SolutionImg from "@/imgs/Solution.webp";
 
 export default function Solution() {
@@ -95,7 +94,6 @@ export default function Solution() {
           </div>
         </div>
       </div>
-      <FooterSection />
     </section>
   );
 }
