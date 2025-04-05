@@ -5,6 +5,7 @@ import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import type { TeamMember } from "@/app/team/types";
+import Image from "next/image";
 
 interface TeamDisplayProps {
   teamMembers: TeamMember[];
@@ -45,7 +46,7 @@ export default function TeamDisplay({ teamMembers }: TeamDisplayProps) {
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5 }}
-                className={`p-4 rounded-lg cursor-pointer transition-colors ${
+                className={`p-4 rounded-lg cursor-pointer transition-all hover:scale-105 ${
                   selectedMember?.id === member.id
                     ? "bg-primary/10"
                     : "hover:bg-primary/5"
@@ -53,11 +54,15 @@ export default function TeamDisplay({ teamMembers }: TeamDisplayProps) {
                 onClick={() => setSelectedMember(member)}
               >
                 <div className="flex items-center gap-4">
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="w-16 h-16 rounded-full object-cover"
-                  />
+                  <div className="w-20 h-20 relative rounded-xl overflow-hidden ring-2 ring-primary/20 shadow-lg">
+                    <Image
+                      src={member.image}
+                      alt={member.name}
+                      fill
+                      sizes="80px"
+                      className="object-cover hover:scale-110 transition-transform duration-300"
+                    />
+                  </div>
                   <div>
                     <h3 className="font-semibold">{member.name}</h3>
                     <p className="text-sm text-muted-foreground">
@@ -79,11 +84,15 @@ export default function TeamDisplay({ teamMembers }: TeamDisplayProps) {
             className="lg:w-2/3 bg-card rounded-xl p-8 shadow-lg"
           >
             <div className="flex flex-col md:flex-row gap-8 items-start">
-              <img
-                src={selectedMember.image}
-                alt={selectedMember.name}
-                className="w-48 h-48 rounded-lg object-cover"
-              />
+              <div className="w-64 h-64 relative rounded-2xl overflow-hidden ring-4 ring-primary/20 shadow-xl mx-auto md:mx-0">
+                <Image
+                  src={selectedMember.image}
+                  alt={selectedMember.name}
+                  fill
+                  sizes="256px"
+                  className="object-cover hover:scale-105 transition-transform duration-500"
+                />
+              </div>
               <div className="flex-1">
                 <h3 className="text-2xl font-bold mb-2">
                   {selectedMember.name}
@@ -137,14 +146,31 @@ export default function TeamDisplay({ teamMembers }: TeamDisplayProps) {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}
-        className="text-center mt-16 p-8 bg-card rounded-xl shadow-lg"
+        className="mt-24 relative"
       >
-        <h3 className="text-2xl font-bold mb-4">Join Our Team</h3>
-        <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-          We're always looking for talented individuals to join our team. If
-          you're passionate about what we do, we'd love to hear from you.
-        </p>
-        <Button size="lg">View Open Positions</Button>
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-primary/5 rounded-3xl transform -skew-y-2" />
+        <div className="relative bg-card/80 backdrop-blur-sm rounded-3xl p-16 border border-primary/10 shadow-xl">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+            <div className="text-left max-w-xl">
+              <h3 className="text-4xl font-bold mb-4">
+                Join Our <span className="text-primary">Team</span>
+              </h3>
+              <p className="text-muted-foreground text-lg leading-relaxed">
+                We're always looking for talented individuals to join our team.
+                If you're passionate about what we do, we'd love to hear from
+                you.
+              </p>
+            </div>
+            <Button
+              size="lg"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground min-w-[200px]
+                shadow-[0_0_20px_rgba(var(--primary),0.3)] hover:shadow-[0_0_25px_rgba(var(--primary),0.4)]
+                transition-all duration-300 text-lg font-semibold"
+            >
+              View Open Positions
+            </Button>
+          </div>
+        </div>
       </motion.div>
     </div>
   );
