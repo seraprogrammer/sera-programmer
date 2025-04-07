@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     images: [Logo.src], // Make sure to add your Twitter card image
   },
   verification: {
-    google: "",
+    google: "tsnQshEK1h05sFupVY7YurYFdnhwMFB0tAQIFqhUw8A",
   },
   alternates: {
     canonical: "https://seraprogrammer.com",
