@@ -7,6 +7,9 @@ const nextConfig: NextConfig = {
       {
         hostname: "codervai.vercel.app",
       },
+      {
+        hostname: "olova.js.org",
+      },
     ],
   },
 };

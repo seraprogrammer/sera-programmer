@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Menu, X, Home, Lightbulb, Users, Mail } from "lucide-react";
+import { Menu, X, Home, Lightbulb, Users, Mail, Package } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { ModeToggle } from "@/components/toggle";
@@ -21,6 +21,11 @@ const menuItems = [
     name: "Contact Us",
     href: "/contact",
     icon: <Mail className="mr-2 h-4 w-4" />,
+  },
+  {
+    name: "Products",
+    href: "/products",
+    icon: <Package className="mr-2 h-4 w-4" />,
   },
 ];
 
