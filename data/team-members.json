@@ -54,5 +54,15 @@
     "social": {
       "github": "https://github.com/altr-r"
     }
+  },
+  {
+    "id": 6,
+    "name": "Tarek Jaman",
+    "role": "Developer",
+    "image": "https://iili.io/3ccPv9V.jpg",
+    "bio": "Arafat is a developer focused on clean and efficient code.",
+    "social": {
+      "github": "https://github.com/tarekbinjaman"
+    }
   }
 ]
