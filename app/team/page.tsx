@@ -1,7 +1,13 @@
 import TeamDisplay from "./components/TeamDisplay";
 import type { TeamMember } from "./types";
-import { Metadata } from "next";
+import { Metadata, Viewport } from "next";
 import teamMembersData from "../../data/team-members.json";
+
+// Define viewport settings
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
 
 // Define metadata for SEO
 export const metadata: Metadata = {
@@ -34,10 +40,6 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
-  },
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
   },
 };
 
