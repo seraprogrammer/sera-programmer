@@ -14,6 +14,17 @@
   },
   {
     "id": 2,
+    "name": "Md Ikram Sarker",
+    "role": "Developer",
+    "image": "https://iili.io/3cT7KZX.jpg",
+    "bio": "Md Ikram Sarker is a frontend developer with more than 1 year of experience.",
+    "social": {
+      "linkedin": "https://www.linkedin.com/in/ikram-islam/",
+      "github": "https://github.com/Mohammad-ikram-sarkar"
+    }
+  },
+  {
+    "id": 3,
     "name": "Sakib Fakir",
     "role": "Developer",
     "image": "https://iili.io/3cxMwhB.png",
@@ -24,7 +35,7 @@
     }
   },
   {
-    "id": 3,
+    "id": 4,
     "name": "Md. Sanzid Alam Sahil",
     "role": "Developer",
     "image": "https://iili.io/3cxhY8u.jpg",
@@ -35,7 +46,7 @@
     }
   },
   {
-    "id": 4,
+    "id": 5,
     "name": "Arafat Rahman Siam",
     "role": "Developer",
     "image": "https://iili.io/3cxkfF2.jpg",
