@@ -1,6 +1,7 @@
 import TeamDisplay from "./components/TeamDisplay";
 import type { TeamMember } from "./types";
 import { Metadata } from "next";
+import teamMembersData from "../../data/team-members.json";
 
 // Define metadata for SEO
 export const metadata: Metadata = {
@@ -40,20 +41,8 @@ export const metadata: Metadata = {
   },
 };
 
-const teamMembers: TeamMember[] = [
-  {
-    id: 1,
-    name: "Nazmul Hossain",
-    role: "CEO & Founder",
-    image: "https://codervai.vercel.app/assets/hero-D3XrQ9qY.jpg",
-    bio: "Nazmul has over 7 years of experience in the industry and leads our strategic vision.",
-    social: {
-      twitter: "https://x.com/js_olova",
-      linkedin: "https://www.linkedin.com/in/codernazmulhossain/",
-      github: "https://github.com/seraprogrammer",
-    },
-  },
-];
+// Load team members from JSON file
+const teamMembers: TeamMember[] = teamMembersData;
 
 export default function Team() {
   return (
