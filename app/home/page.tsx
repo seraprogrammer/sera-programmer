@@ -180,14 +180,18 @@ export default function HeroSection() {
                   <Image
                     className=" w-full relative hidden rounded-2xl dark:block scale-110 top-[-30]"
                     src={heroImage}
-                    alt="app screen"
+                    alt="Modern web design application interface in dark mode"
                     placeholder="blur"
+                    loading="lazy"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
                   />
                   <Image
                     className="z-2 border-border/25  w-full relative rounded-2xl border dark:hidden scale-110 top-[-30]"
                     src={heroImage}
-                    alt="app screen"
+                    alt="Modern web design application interface in light mode"
                     placeholder="blur"
+                    loading="lazy"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
                   />
                 </div>
               </div>
