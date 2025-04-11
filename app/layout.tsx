@@ -16,16 +16,17 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SeraProgrammer - Modern Web Development & AI Solutions | Bangladesh",
+  title:
+    "Sera Programmer | Creative Web Design & Development Agency | Custom Solutions",
   description:
-    "Leading web development agency in Bangladesh specializing in React, Next.js, Vue.js, and AI chatbot integration. Expert Figma to code conversion, modern UI/UX design, and custom API development services for global clients.",
+    "Sera Programmer delivers cutting-edge web design & development solutions for businesses across multiple industries. From responsive websites to custom applications, our expert team brings your digital vision to life. Get a free consultation today!",
   keywords:
     "web development agency, React development, Next.js development, Vue.js development, AI chatbot integration, Figma to React conversion, API integration, Bangladesh web agency, tailwind CSS development, modern web design, UI/UX design, custom web solutions, frontend development, full-stack development, web development Bangladesh",
   openGraph: {
     title:
-      "SeraProgrammer - Modern Web Development & AI Solutions | Bangladesh",
+      "Sera Programmer | Creative Web Design & Development Agency | Custom Solutions",
     description:
-      "Leading web development agency in Bangladesh specializing in React, Next.js, Vue.js, and AI chatbot integration. Expert Figma to code conversion, modern UI/UX design, and custom API development services for global clients.",
+      "Sera Programmer delivers cutting-edge web design & development solutions for businesses across multiple industries. From responsive websites to custom applications, our expert team brings your digital vision to life. Get a free consultation today!",
     url: "https://seraprogrammer.com",
     siteName: "SeraProgrammer",
     images: [
@@ -33,7 +34,7 @@ export const metadata: Metadata = {
         url: Logo.src, // Make sure to add your OG image
         width: 1200,
         height: 630,
-        alt: "SeraProgrammer - Web Development Agency",
+        alt: "Sera Programmer | Creative Web Design & Development Agency | Custom Solutions",
       },
     ],
     locale: "en_US",
