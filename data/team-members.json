@@ -10,5 +10,16 @@
       "linkedin": "https://www.linkedin.com/in/codernazmulhossain/",
       "github": "https://github.com/seraprogrammer"
     }
+  },
+  {
+    "id": 2,
+    "name": "Sakib Fakir",
+    "role": "Developer",
+    "image": "https://iili.io/3coSWBf.png",
+    "bio": "Sakib Fakir is a frontend developer with more than 1 year of experience.",
+    "social": {
+      "linkedin": "https://www.linkedin.com/in/sakib-fakir-183923295",
+      "github": "https://github.com/SakibFakir69"
+    }
   }
 ]
