@@ -7,19 +7,19 @@ import teamMembersData from "../../data/team-members.json";
 export const metadata: Metadata = {
   title: "Our Team | Sera Programmer",
   description:
-    "Meet our talented team of web development experts led by Nazmul Hossain, CEO & Founder with over 7 years of industry experience. We're passionate about creating exceptional digital experiences.",
+    "Meet our diverse and talented team of web development experts at Sera Programmer. Our dedicated professionals bring years of industry experience and passion for creating exceptional digital experiences.",
   keywords:
-    "web development team, Nazmul Hossain, tech leadership, expert developers, web design team, professional web team",
+    "web development team, tech experts, professional developers, web design team, software engineers, digital specialists, IT professionals",
   openGraph: {
     title: "Meet Our Expert Web Development Team",
     description:
-      "Get to know the talented professionals behind Sera Programmer, led by Nazmul Hossain, bringing over 7 years of industry expertise.",
+      "Discover the talented professionals behind Sera Programmer. Our diverse team brings together years of industry expertise to deliver outstanding digital solutions.",
     images: [
       {
         url: "https://codervai.vercel.app/assets/hero-D3XrQ9qY.jpg",
         width: 800,
         height: 600,
-        alt: "Nazmul Hossain - CEO & Founder",
+        alt: "Sera Programmer Team",
       },
     ],
     type: "website",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Meet Our Expert Web Development Team",
     description:
-      "Get to know the talented professionals behind Sera Programmer, led by Nazmul Hossain, bringing over 7 years of industry expertise.",
+      "Discover the talented professionals behind Sera Programmer. Our diverse team brings together years of industry expertise to deliver outstanding digital solutions.",
     images: ["https://codervai.vercel.app/assets/hero-D3XrQ9qY.jpg"],
   },
   robots: {
