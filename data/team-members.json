@@ -15,11 +15,22 @@
     "id": 2,
     "name": "Sakib Fakir",
     "role": "Developer",
-    "image": "https://iili.io/3coSWBf.png",
+    "image": "https://i.postimg.cc/tgZKFLTM/f043707a-8853-45e9-a12c-7d7a860dffd0-removebg-preview.png",
     "bio": "Sakib Fakir is a frontend developer with more than 1 year of experience.",
     "social": {
       "linkedin": "https://www.linkedin.com/in/sakib-fakir-183923295",
       "github": "https://github.com/SakibFakir69"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Md. Sanzid Alam Sahil",
+    "role": "Developer",
+    "image": "https://iili.io/3cxRDG4.jpg",
+    "bio": "A dedicated developer with a passion for building modern web applications.",
+    "social": {
+      "linkedin": "https://www.linkedin.com/in/md-sanzid-alam-sahil-a95508355/",
+      "github": "https://github.com/sahil1815"
     }
   }
 ]
