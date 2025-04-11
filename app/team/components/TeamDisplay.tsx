@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import type { TeamMember } from "@/app/team/types";
 import Image from "next/image";
 import Link from "next/link";
+import { Badge } from "@/components/ui/badge";
 
 interface TeamDisplayProps {
   teamMembers: TeamMember[];
@@ -66,7 +67,16 @@ export default function TeamDisplay({ teamMembers }: TeamDisplayProps) {
                     />
                   </div>
                   <div>
-                    <h3 className="font-semibold">{member.name}</h3>
+                    <div className="flex items-center gap-2">
+                      <h3 className="font-semibold">{member.name}</h3>
+                      {member.profile && (
+                        <Link href={`/${member.profile}`}>
+                          <Badge className="cursor-pointer hover:bg-primary hover:text-primary-foreground">
+                            Profile
+                          </Badge>
+                        </Link>
+                      )}
+                    </div>
                     <p className="text-sm text-muted-foreground">
                       {member.role}
                     </p>
@@ -97,8 +107,15 @@ export default function TeamDisplay({ teamMembers }: TeamDisplayProps) {
                 />
               </div>
               <div className="flex-1">
-                <h3 className="text-2xl font-bold mb-2">
+                <h3 className="text-2xl font-bold mb-2 flex items-center gap-3">
                   {selectedMember.name}
+                  {selectedMember.profile && (
+                    <Link href={`/${selectedMember.profile}`}>
+                      <Badge className="cursor-pointer hover:bg-primary hover:text-primary-foreground">
+                        View Profile
+                      </Badge>
+                    </Link>
+                  )}
                 </h3>
                 <p className="text-primary font-medium mb-4">
                   {selectedMember.role}
