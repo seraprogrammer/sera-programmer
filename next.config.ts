@@ -10,6 +10,9 @@ const nextConfig: NextConfig = {
       {
         hostname: "olova.js.org",
       },
+      {
+        hostname: "postimages.org",
+      },
     ],
   },
   // Enable JSON imports
