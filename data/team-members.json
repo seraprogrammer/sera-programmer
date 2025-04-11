@@ -64,5 +64,15 @@
     "social": {
       "github": "https://github.com/tarekbinjaman"
     }
+  },
+  {
+    "id": 7,
+    "name": "Rakibul Islam",
+    "role": "Developer",
+    "image": "https://iili.io/3ccDtrF.png",
+    "bio": "Rakibul Islam is a developer focused on clean and efficient code.",
+    "social": {
+      "github": "https://github.com/rakibulislam007"
+    }
   }
 ]
