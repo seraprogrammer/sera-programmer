@@ -1,5 +1,44 @@
 import TeamDisplay from "./components/TeamDisplay";
 import type { TeamMember } from "./types";
+import { Metadata } from "next";
+
+// Define metadata for SEO
+export const metadata: Metadata = {
+  title: "Our Team | Sera Programmer",
+  description:
+    "Meet our talented team of web development experts led by Nazmul Hossain, CEO & Founder with over 7 years of industry experience. We're passionate about creating exceptional digital experiences.",
+  keywords:
+    "web development team, Nazmul Hossain, tech leadership, expert developers, web design team, professional web team",
+  openGraph: {
+    title: "Meet Our Expert Web Development Team",
+    description:
+      "Get to know the talented professionals behind Sera Programmer, led by Nazmul Hossain, bringing over 7 years of industry expertise.",
+    images: [
+      {
+        url: "https://codervai.vercel.app/assets/hero-D3XrQ9qY.jpg",
+        width: 800,
+        height: 600,
+        alt: "Nazmul Hossain - CEO & Founder",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Meet Our Expert Web Development Team",
+    description:
+      "Get to know the talented professionals behind Sera Programmer, led by Nazmul Hossain, bringing over 7 years of industry expertise.",
+    images: ["https://codervai.vercel.app/assets/hero-D3XrQ9qY.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+  },
+};
 
 const teamMembers: TeamMember[] = [
   {

@@ -1,6 +1,45 @@
 import { Code, Palette, Zap } from "lucide-react";
 import Image from "next/image";
 import SolutionImg from "@/imgs/Solution.webp";
+import { Metadata } from "next";
+
+// Define metadata for SEO
+export const metadata: Metadata = {
+  title: "Modern Web Solutions | Sera Programmer",
+  description:
+    "Elevating your digital presence with cutting-edge technology and stunning design. We deliver complete digital experiences that help your business stand out and succeed.",
+  keywords:
+    "web solutions, digital experiences, performance optimization, web design, web development, modern technology",
+  openGraph: {
+    title: "Modern Web Solutions",
+    description:
+      "Elevating your digital presence with cutting-edge technology and stunning design.",
+    images: [
+      {
+        url: "/imgs/Solution.webp",
+        width: 1024,
+        height: 768,
+        alt: "Modern web design illustration",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Modern Web Solutions",
+    description:
+      "Elevating your digital presence with cutting-edge technology and stunning design.",
+    images: ["/imgs/Solution.webp"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+  },
+};
 
 export default function Solution() {
   return (

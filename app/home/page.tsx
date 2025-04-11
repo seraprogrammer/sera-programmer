@@ -7,6 +7,45 @@ import Image from "next/image";
 import MouseGradient from "@/app/components/mouse-gradient";
 import { IndustriesSection } from "@/app/components/industries-section";
 import FooterSection from "@/app/components/footer";
+import { Metadata } from "next";
+
+// Define metadata for SEO
+export const metadata: Metadata = {
+  title: "Creative & Modern Web Design Solutions | Sera Programmer",
+  description:
+    "Unlock the power of creativity with cutting-edge web design solutions tailored for modern experiences. Build stunning, responsive, and user-friendly websites that captivate and engage your audience effortlessly.",
+  keywords:
+    "web design, modern web, responsive design, UI/UX, web development, creative design",
+  openGraph: {
+    title: "Creative & Modern Web Design Solutions",
+    description:
+      "Unlock the power of creativity with cutting-edge web design solutions tailored for modern experiences.",
+    images: [
+      {
+        url: "/imgs/hero.webp",
+        width: 1200,
+        height: 630,
+        alt: "Modern web design application interface",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Creative & Modern Web Design Solutions",
+    description:
+      "Unlock the power of creativity with cutting-edge web design solutions tailored for modern experiences.",
+    images: ["/imgs/hero.webp"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+  },
+};
 
 const transitionVariants = {
   item: {
