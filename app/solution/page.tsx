@@ -82,6 +82,8 @@ export default function Solution() {
                 src={SolutionImg}
                 className="hidden dark:block w-full h-auto transition-transform duration-700 group-hover:scale-105"
                 alt="modern web design illustration dark"
+                loading="lazy"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
               />
               <Image
                 width={1024}
@@ -89,6 +91,8 @@ export default function Solution() {
                 src={SolutionImg}
                 className="dark:hidden w-full h-auto transition-transform duration-700 group-hover:scale-105"
                 alt="modern web design illustration light"
+                loading="lazy"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
               />
             </div>
           </div>

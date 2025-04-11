@@ -62,6 +62,7 @@ export default function TeamDisplay({ teamMembers }: TeamDisplayProps) {
                       fill
                       sizes="80px"
                       className="object-cover hover:scale-110 transition-transform duration-300"
+                      loading="lazy"
                     />
                   </div>
                   <div>
@@ -92,6 +93,7 @@ export default function TeamDisplay({ teamMembers }: TeamDisplayProps) {
                   fill
                   sizes="256px"
                   className="object-cover hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
                 />
               </div>
               <div className="flex-1">
