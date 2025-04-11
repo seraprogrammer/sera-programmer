@@ -32,5 +32,15 @@
       "linkedin": "https://www.linkedin.com/in/md-sanzid-alam-sahil-a95508355/",
       "github": "https://github.com/sahil1815"
     }
+  },
+  {
+    "id": 4,
+    "name": "Arafat Rahman Siam",
+    "role": "Developer",
+    "image": "https://iili.io/3cxkfF2.jpg",
+    "bio": "Arafat is a developer focused on clean and efficient code.",
+    "social": {
+      "github": "https://github.com/altr-r"
+    }
   }
 ]
